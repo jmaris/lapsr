@@ -222,7 +222,7 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
           <object class="GtkBox" id="box5">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_bottom">9</property>
+            <property name="margin_bottom">10</property>
             <child>
               <object class="GtkImage" id="image3">
                 <property name="visible">True</property>
@@ -355,15 +355,16 @@ Then Click "Next" to continue !</property>
       <object class="GtkBox" id="box7">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="margin_left">30</property>
-        <property name="margin_right">30</property>
-        <property name="margin_top">5</property>
-        <property name="margin_bottom">5</property>
+        <property name="margin_left">15</property>
+        <property name="margin_right">15</property>
+        <property name="margin_top">15</property>
+        <property name="margin_bottom">15</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkBox" id="box8">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_bottom">10</property>
             <child>
               <object class="GtkImage" id="image4">
                 <property name="visible">True</property>
@@ -381,13 +382,15 @@ Then Click "Next" to continue !</property>
               <object class="GtkLabel" id="label8">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_top">10</property>
                 <property name="label" translatable="yes">Camera Discovery Wizard</property>
+                <property name="justify">center</property>
                 <attributes>
                   <attribute name="font-desc" value="Raleway 13"/>
                 </attributes>
               </object>
               <packing>
-                <property name="expand">False</property>
+                <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">1</property>
               </packing>
@@ -400,16 +403,26 @@ Then Click "Next" to continue !</property>
           </packing>
         </child>
         <child>
+          <object class="GtkSeparator" id="separator3">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkBox" id="box10">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_top">10</property>
             <child>
               <object class="GtkImage" id="image5">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="valign">start</property>
-                <property name="margin_left">34</property>
-                <property name="margin_top">23</property>
                 <property name="pixel_size">45</property>
                 <property name="icon_name">dialog-error</property>
               </object>
@@ -425,7 +438,6 @@ Then Click "Next" to continue !</property>
                 <property name="can_focus">False</property>
                 <property name="margin_left">20</property>
                 <property name="margin_right">20</property>
-                <property name="margin_top">21</property>
                 <property name="margin_bottom">10</property>
                 <property name="label" translatable="yes">Sorry but we're having trouble finding your camera.
 try turning it off and on, And try unmounting your camera.
@@ -443,7 +455,7 @@ run gphoto2 --list-cameras in a terminal.</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
@@ -452,7 +464,6 @@ run gphoto2 --list-cameras in a terminal.</property>
             <property name="can_focus">False</property>
             <property name="halign">center</property>
             <property name="valign">center</property>
-            <property name="margin_top">20</property>
             <property name="hexpand">True</property>
             <property name="spacing">70</property>
             <property name="homogeneous">True</property>
@@ -494,7 +505,7 @@ run gphoto2 --list-cameras in a terminal.</property>
           <packing>
             <property name="expand">True</property>
             <property name="fill">True</property>
-            <property name="position">2</property>
+            <property name="position">3</property>
           </packing>
         </child>
       </object>
@@ -561,6 +572,17 @@ run gphoto2 --list-cameras in a terminal.</property>
           </packing>
         </child>
         <child>
+          <object class="GtkSeparator" id="separator2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkLabel" id="label11">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
@@ -573,7 +595,7 @@ run gphoto2 --list-cameras in a terminal.</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
@@ -670,7 +692,7 @@ run gphoto2 --list-cameras in a terminal.</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">2</property>
+            <property name="position">3</property>
           </packing>
         </child>
         <child>
@@ -721,7 +743,7 @@ run gphoto2 --list-cameras in a terminal.</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">3</property>
+            <property name="position">4</property>
           </packing>
         </child>
       </object>
