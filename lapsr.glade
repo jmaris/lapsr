@@ -111,6 +111,10 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
       <object class="GtkBox" id="box1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="margin_left">15</property>
+        <property name="margin_right">15</property>
+        <property name="margin_top">10</property>
+        <property name="margin_bottom">10</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkImage" id="image2">
@@ -129,10 +133,8 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
           <object class="GtkBox" id="box4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_left">30</property>
-            <property name="margin_right">30</property>
-            <property name="margin_top">29</property>
-            <property name="margin_bottom">12</property>
+            <property name="margin_top">15</property>
+            <property name="margin_bottom">15</property>
             <property name="orientation">vertical</property>
             <property name="spacing">11</property>
             <child>
@@ -211,15 +213,16 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
       <object class="GtkBox" id="box3">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
-        <property name="margin_left">30</property>
-        <property name="margin_right">30</property>
-        <property name="margin_top">9</property>
-        <property name="margin_bottom">11</property>
+        <property name="margin_left">15</property>
+        <property name="margin_right">15</property>
+        <property name="margin_top">15</property>
+        <property name="margin_bottom">10</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkBox" id="box5">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
+            <property name="margin_bottom">9</property>
             <child>
               <object class="GtkImage" id="image3">
                 <property name="visible">True</property>
@@ -237,14 +240,15 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
               <object class="GtkLabel" id="label6">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="valign">center</property>
+                <property name="margin_top">10</property>
                 <property name="label" translatable="yes">Camera Discovery Wizard</property>
+                <property name="justify">fill</property>
                 <attributes>
                   <attribute name="font-desc" value="Raleway 13"/>
                 </attributes>
               </object>
               <packing>
-                <property name="expand">False</property>
+                <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">1</property>
               </packing>
@@ -253,25 +257,36 @@ For details, visit http://www.gnu.org/licenses/gpl.html</property>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">0</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator" id="separator1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
           <object class="GtkLabel" id="label7">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="margin_top">10</property>
-            <property name="margin_bottom">14</property>
+            <property name="margin_top">15</property>
+            <property name="margin_bottom">15</property>
             <property name="label" translatable="yes">Before we get going, We have to detect your camera.
 It's no big deal, Ensure it is plugged in, Then Turn it on
 Then Click "Next" to continue !</property>
-            <property name="justify">center</property>
+            <property name="justify">fill</property>
             <property name="wrap">True</property>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="position">1</property>
+            <property name="position">3</property>
           </packing>
         </child>
         <child>
@@ -282,7 +297,7 @@ Then Click "Next" to continue !</property>
             <property name="valign">center</property>
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
-            <property name="spacing">70</property>
+            <property name="spacing">50</property>
             <property name="homogeneous">True</property>
             <child>
               <object class="GtkButton" id="button5">
@@ -309,20 +324,21 @@ Then Click "Next" to continue !</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="valign">center</property>
+                <property name="hexpand">True</property>
                 <property name="use_action_appearance">False</property>
                 <signal name="pressed" handler="listcams" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
-                <property name="fill">True</property>
+                <property name="fill">False</property>
                 <property name="position">1</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="expand">False</property>
+            <property name="expand">True</property>
             <property name="fill">True</property>
-            <property name="position">2</property>
+            <property name="position">4</property>
           </packing>
         </child>
       </object>

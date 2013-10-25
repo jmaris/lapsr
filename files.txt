@@ -1,5 +1,0 @@
-data
-media
-lapsr.py~
-lapsr.glade
-lapsr.py
