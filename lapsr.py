@@ -7,10 +7,15 @@ import subprocess
 import linecache
 import gobject
 class Handler:
+
 #Exit the look on program closure
     def onDeleteWindow(self, *args):
         print "EXIT";
         Gtk.main_quit(*args)
+
+#lapse complete, quit program
+    def quit(self, *args):
+        exit()
 
 #Open and close the about dialog
     def openAbout(self, *args):
@@ -20,7 +25,8 @@ class Handler:
     def hideAbout(self, *args):
         print "Test";
         about.hide()
-#wiz4 display
+
+#wiz4 display currently for debugging
     def display4(self, *args):
         wiz4.show_all()
 
@@ -71,6 +77,7 @@ class Handler:
             print camera," detected"
             cameraid.set_text(camera)
             wiz2.show_all()
+
 #allows for lapse cancelation after next shot
     def cancellapse(self, *args):
         completed=1
@@ -110,9 +117,6 @@ class Handler:
             print "done"
             wiz5.show_all()
 
-#lapse complete, quit program
-    def quit(self, *args):
-        exit()
 # take the information and run the lapse
     def startlapse(self, *args):
         wiz2.hide()
